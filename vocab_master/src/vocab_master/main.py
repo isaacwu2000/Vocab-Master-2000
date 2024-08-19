@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import sys
-from vocab_master.crew import VocabMasterCrew
+from crew import VocabMasterCrew
 
 # This main file is intended to be a way for your to run your
 # crew locally, so refrain from adding necessary logic into this file.
@@ -12,10 +12,11 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'AI LLMs'
+        'vocab_words': 'flamable, accent'
     }
     VocabMasterCrew().crew().kickoff(inputs=inputs)
 
+run()
 
 def train():
     """
